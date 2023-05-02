@@ -2,15 +2,15 @@
   <h1>ALGAFOOD 🍽</h1>
 </header>
 
-  <form class="buttons-container">
+  <form class="buttons-container" #taskForm="ngForm" (ngSubmit)="getRestaurants()">
     <button type="submit">Consultar</button>
     <button type="submit">Login</button>
   </form>
 
 <main class="restaurants-container">
   <ul class="restaurants">
-    <li *ngFor="let restaurante of [123,123]">
-      restaurante.nome
+    <li *ngFor="let restaurant of restaurantes">
+      {{restaurant.nome}}
     </li>
   </ul>
 </main>
