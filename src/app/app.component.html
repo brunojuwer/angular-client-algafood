@@ -2,14 +2,15 @@
   <h1>ALGAFOOD 🍽</h1>
 </header>
 
-  <div class="add-field">
-    
-    <button type="submit">Add</button>
-  </div>
+  <form class="buttons-container">
+    <button type="submit">Consultar</button>
+    <button type="submit">Login</button>
+  </form>
 
-<main class="tasks">
-  <ul class="tasks-list">
-    <li *ngFor="let tarefa of [123,123]">
+<main class="restaurants-container">
+  <ul class="restaurants">
+    <li *ngFor="let restaurante of [123,123]">
+      restaurante.nome
     </li>
   </ul>
 </main>

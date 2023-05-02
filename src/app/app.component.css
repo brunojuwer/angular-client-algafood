@@ -1,12 +1,55 @@
 header {
     width: 100vw;
     background: #0d47a1;
-    padding: 2rem 0 1rem;
+    padding: 3rem 0 3rem;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    color: #f0f3f9;
+}
+
+form.buttons-container {
+    margin: -25px auto;
+    max-width: 800px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 
+button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #f0f3f9;
+    background-color: #c3002f;
+    cursor: pointer;
+}
 
+button:hover {
+    background: #b13754;
+}
+
+main.restaurants-container {
+    margin: 5rem auto;
+    max-width: 800px;
+    width: 100%;
+
+    text-align: center;
+}
+
+ul.restaurants {
+  list-style-type: none;
+}
+
+li {
+    font-size: 1.75rem;
+    color: #f0f3f9;
+}
