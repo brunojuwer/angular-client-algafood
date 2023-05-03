@@ -14,11 +14,11 @@ export class AppService {
   constructor(private http: HttpClient) {}
 
   getData() {
-    return this.http.get(this.baseUrl, {
-      headers: {
-        "Authorization": `Bearer ${this.data["access_token"]}`
-      }
-    })
+      return this.http.get(this.baseUrl, {
+        headers: {
+          "Authorization": `Bearer ${this.data["access_token"]}`
+        }
+      })
   }
 
   postData(code: string) {

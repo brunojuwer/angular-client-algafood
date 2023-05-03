@@ -26,7 +26,6 @@ export class AppComponent {
 
   ngOnInit(){
     this.route.queryParams.subscribe(params => {
-      
       if(Object.keys(params).length) {
         this.generateToken(params["code"])
       }
@@ -34,10 +33,14 @@ export class AppComponent {
   }
 
   getRestaurants() {
-    this.appService.getData().subscribe((response) => {
-      this.restaurantObj = response;
-      this.restaurantes = this.restaurantObj._embedded.restaurantes;
-    })
+    try {
+      this.appService.getData().subscribe((response) => {
+        this.restaurantObj = response;
+        this.restaurantes = this.restaurantObj._embedded.restaurantes;
+      })
+    } catch(err) {
+      alert("Por favor, realize o login!")
+    }
   }
 
   redirectToLoginView(){
