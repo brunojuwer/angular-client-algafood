@@ -4,7 +4,7 @@
 
   <form class="buttons-container" #taskForm="ngForm" (ngSubmit)="getRestaurants()">
     <button type="submit">Consultar</button>
-    <button type="submit">Login</button>
+    <button type="button" (click)="redirectToLoginView()">Login</button>
   </form>
 
 <main class="restaurants-container">
